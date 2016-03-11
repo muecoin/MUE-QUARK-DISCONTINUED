@@ -8,7 +8,7 @@
 #endif
 
 #include <QWidget>
-#include <QWebEngineView>
+#include <QWebView>
 
 namespace Ui {
 class PurchaseMue;
