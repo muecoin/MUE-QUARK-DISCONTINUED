@@ -280,7 +280,8 @@ RES_ICONS = \
   qt/res/icons/unit_ubtc.png \
   qt/res/icons/blexp.png \
   qt/res/icons/chat.png \
-  qt/res/icons/markets.png
+  qt/res/icons/markets.png \
+  qt/res/icons/purchase.png
 
 BITCOIN_QT_CPP = \
   qt/bitcoinaddressvalidator.cpp \
