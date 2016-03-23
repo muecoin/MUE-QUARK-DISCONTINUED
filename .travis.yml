@@ -25,9 +25,11 @@ env:
     - WINEDEBUG=fixme-all
     - PKGVER=1.0.10.8
 cache:
-  apt: true
+  - ccache
   directories:
   - depends/built
+  - depends/sources
+  - depends/SDKs
   - depends/sdk-sources
   - $HOME/.ccache
 matrix:
