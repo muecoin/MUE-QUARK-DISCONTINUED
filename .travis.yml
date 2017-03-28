@@ -10,8 +10,8 @@ os: linux
 language: cpp
 compiler: gcc
 notifications:
-  slack:
-    secure: mb2bj3QwJf+WOOI/gcFeQIGtzbrSlFqFzOIcht6bdQDG3c5hkiGjSx3HufYjKAh91nAu4AyBjI0d6R6fCfJVclU4UpRumpNhaui3/dTyV+7/IjIOKlgF72/4O04j47wBc+y7YA7N+6JxcWl1gdBwPOptVO1moSSEm/WlOTRRuAo=
+  slack: muecoin:ydry8ZYml2gJZTKVQkK26mdh
+#    secure: mb2bj3QwJf+WOOI/gcFeQIGtzbrSlFqFzOIcht6bdQDG3c5hkiGjSx3HufYjKAh91nAu4AyBjI0d6R6fCfJVclU4UpRumpNhaui3/dTyV+7/IjIOKlgF72/4O04j47wBc+y7YA7N+6JxcWl1gdBwPOptVO1moSSEm/WlOTRRuAo=
 env:
   global:
     - MAKEJOBS=-j3
@@ -99,10 +99,10 @@ script:
 deploy:
   provider: releases
   skip_cleanup: true
-  api_key:
-    secure: B9qVig4Y8iPgHQvp8t3OyZwAhLjZhfRsSWZpRX3kOlQn/LEGQ3xTXF8qpnT0UsgjUyHY0rlWrNwRVFehAYdgn2WHEXGOpQ1glGRGV4LhxgFI7hEFj+9n4Pi71ySeP9yzjekX/fqX/52rLFstPs/Lxb61/xpABF9Dhz1OuIbP5h8=
+  #api_key:
+  #  secure: B9qVig4Y8iPgHQvp8t3OyZwAhLjZhfRsSWZpRX3kOlQn/LEGQ3xTXF8qpnT0UsgjUyHY0rlWrNwRVFehAYdgn2WHEXGOpQ1glGRGV4LhxgFI7hEFj+9n4Pi71ySeP9yzjekX/fqX/52rLFstPs/Lxb61/xpABF9Dhz1OuIbP5h8=
   file: "$DEPLOYFILE"
   on:
-    repo: MonetaryUnit/MUE-Src
+    repo: muecoin/MUE-Src
     tags: true
     condition: "! -z $DEPLOYFILE"
