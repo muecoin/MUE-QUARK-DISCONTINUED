@@ -225,8 +225,8 @@ public:
         assert(hashGenesisBlock == hashMainGenesisBlock);
         assert(genesis.hashMerkleRoot == uint256("0xa2cc3c1d8ab6e50e80464693199eefdd172d45c4129998394e636e47b5621364"));
 
-        vSeeds.push_back(CDNSSeedData("dnsseed.exapool.com", "dnsseed.exapool.com"));
-        vSeeds.push_back(CDNSSeedData("dnsseed.muewallet.com", "dnsseed.muewallet.com"));
+        vSeeds.push_back(CDNSSeedData("weminemue.com", "weminemue.com"));
+        vSeeds.push_back(CDNSSeedData("nodes.muex.io", "nodes.muex.io"));
 
         base58Prefixes[PUBKEY_ADDRESS] = list_of(15);
         base58Prefixes[SCRIPT_ADDRESS] = list_of(9);
